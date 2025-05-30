@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Overhang Beast",
+    "grade": "6A",
+    "image": "./c4_icon.png",
+    "description": "A powerful overhang problem with a tough crux at the top."
+  },
+  {
+    "id": 2,
+    "name": "Sloper City",
+    "grade": "6B+",
+    "image": "./c4_icon.png",
+    "description": "Slopers and body tension required. Great for practicing open hands."
+  },
+  {
+    "id": 3,
+    "name": "Overhang Beast",
+    "grade": "L",
+    "image": "./c4_icon.png",
+    "description": "A powerful overhang problem with a tough crux at the top."
+  },
+  {
+    "id": 4,
+    "name": "Overhang meat ;)",
+    "grade": "7A",
+    "image": "./c4_icon.png",
+    "description": "A powerful overhang problem with a tough crux at the top."
+  },
+  {
+    "id": 5,
+    "name": "Not the least",
+    "grade": "L",
+    "image": "./c4_icon.png",
+    "description": "A powerful overhang problem with a tough crux at the top."
+  },
+  {
+    "id": 6,
+    "name": "The burdner",
+    "grade": "6A+",
+    "image": "./c4_icon.png",
+    "description": "A powerful overhang problem with a tough crux at the top."
+  }
+]
