@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import TopBar from "./components/TopBar";
 import Main from "./components/Main";
 import BottomBar from "./components/BottomBar";
+import CreatePage from "./components/CreatePage";
 
 function App() {
   // const [data, setData] = useState(null);
@@ -34,7 +36,10 @@ function App() {
   return (
     <div className="app-container">
       <TopBar handleToggleModal={handleToggleModal} />
-      <Main difficulty={difficulty} />
+      <Routes>
+        <Route path="/" element={<Main difficulty={difficulty} />} />
+        <Route path="/create" element={<CreatePage />} />
+      </Routes>
       {showModal && (
         <BottomBar
           handleOkDifficulty={handleOkDifficulty}
