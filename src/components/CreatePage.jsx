@@ -23,29 +23,33 @@ export default function CreatePage() {
   }
 
   useEffect(() => {
-    console.log("newClimbGrade updated:", newClimbGrade);
+    console.log("New climb grade updated:", newClimbGrade);
   }, [newClimbGrade]);
 
   return (
-    <div className="newClimbPanel" style={{ padding: "2rem" }}>
-      <button onClick={handleBack} style={{ marginBottom: "1rem" }}>
-        ← Back
-      </button>
-      <h2>Create New boulder</h2>
-      <div>Upload file here</div>
-      <input type="file" onChange={handleChange} />
-      {file && <img src={file} alt="Uploaded preview" />}
+    <div className="createPage">
+      <div className="newClimbHeader">
+        <h2>Create New boulder</h2>
+        <div>Add a photo</div>
+        <input type="file" onChange={handleChange} />
+        {file && (
+          <img
+            src={file}
+            alt="Uploaded preview"
+            className="newClimbPreviewImage"
+          />
+        )}
+      </div>
       {/* info */}
-      <div className="newClimbPanelInfo">
+      <div className="newClimbInfo">
         <p>
           Name:
           <input type="text" placeholder="Enter boulder name" />
         </p>
       </div>
       {/* difficulty */}
-      <div className="newClimbPanelDifficulty">
+      <div className="newClimbDifficulty">
         <SliderGrade ref={sliderRef} />
-        <button onClick={handleOk}>Ok</button>
       </div>
       {/* features - DO NOT TOUCH - TO BE UPDATED!*/}
       {/* <div className="newClimbPanelDifficulty">
@@ -53,6 +57,18 @@ export default function CreatePage() {
           a difficulty pannel here with some grade buttons
         </p>
       </div> */}
+      <div className="newClimbButtons">
+        <button
+          className="newClimbCancelButton"
+          onClick={handleBack}
+          style={{ marginBottom: "1rem" }}
+        >
+          Cancel
+        </button>
+        <button className="newClimbSaveButton" onClick={handleOk}>
+          Save
+        </button>
+      </div>
     </div>
   );
 }
