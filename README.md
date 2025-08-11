@@ -25,12 +25,14 @@ A responsive, mobile-friendly user interface built with **ReactJS** and **Tailwi
 
 ## 📌 To Do
 
-### ✅ Frontend
-- [ ] Implement the "New Climb Log" submission UI and logic.
-
-### ✅ Backend
-- [ ] Connect to a database server (e.g., PostgreSQL or MongoDB).
-- [ ] Retrieve and upload data using **Axios** or a similar HTTP client.
+### ✅ Backend - to implement
+- Node.js: Runtime environment to run JavaScript backend code.
+- Express: Framework for creating API endpoints and handling HTTP requests.
+- MongoDB: NoSQL database for storing boulder problems and related data.
+- Mongoose: ODM (Object Data Modeling) library to interact with MongoDB using schemas.
+- dotenv: Loads environment variables from .env file (e.g., database URI, port).
+- Nodemon: Auto-restarts backend server when files change (development only).
+- CORS: Allows the React frontend to make API requests to the backend from a different origin.
 
 ---
 
