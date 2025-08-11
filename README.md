@@ -23,9 +23,11 @@ A responsive, mobile-friendly user interface built with **ReactJS** and **Tailwi
 
 ---
 
-## 📌 To Do
-
-### ✅ Backend - to implement
+## 📌 Futue Tools to be used
+### ✅ Frontend
+- Axios: HTTP client for making API requests to the backend
+ 
+### ✅ Backend
 - Node.js: Runtime environment to run JavaScript backend code.
 - Express: Framework for creating API endpoints and handling HTTP requests.
 - MongoDB: NoSQL database for storing boulder problems and related data.
